@@ -38,12 +38,8 @@
         .hero-gradient {
             background: linear-gradient(180deg, rgba(250,249,246,0) 0%, rgba(255,255,255,1) 100%);
         }
-        .soft-round {
-            border-radius: 40px;
-        }
-        .fade-in-up {
-            animation: fadeInUp 1s ease-out forwards;
-        }
+        .soft-round { border-radius: 40px; }
+        .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -71,16 +67,16 @@
     <header class="fixed top-0 w-full z-50 ethereal-glass py-3 md:py-5">
         <nav class="container mx-auto px-4 md:px-8 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-3 md:space-x-4 group">
-                <img src="https://i.postimg.cc/PpC1M8J2/615790443-17849043009656125-2597734954172127466-n.jpg" alt="Snack Shack Logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full transition-transform group-hover:rotate-12">
-                <div class="leading-none text-logo-brown">
+                <img src="https://i.postimg.cc/PpC1M8J2/615790443-17849043009656125-2597734954172127466-n.jpg" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full">
+                <div class="leading-none">
                     <span class="block font-serif font-bold text-lg md:text-2xl tracking-tight">Snack Shack</span>
                     <span class="text-logo-pink text-[9px] md:text-[10px] font-sans tracking-[0.2em] uppercase font-bold">Stouffville</span>
                 </div>
             </a>
-            <div class="hidden md:flex items-center space-x-12 text-sm uppercase tracking-[0.15em] font-bold">
-                <a href="#specials" class="hover:text-logo-pink transition-colors">Daily Specials</a>
-                <a href="#testimonials" class="hover:text-logo-pink transition-colors">Community</a>
-                <a href="#footer" class="bg-logo-brown text-white px-8 py-4 rounded-full hover:bg-logo-pink transition-all">Visit Us</a>
+            <div class="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest font-bold">
+                <a href="#specials" class="hover:text-logo-pink transition-colors">Specials</a>
+                <a href="#menu" class="hover:text-logo-pink transition-colors">Menu</a>
+                <a href="#footer" class="bg-logo-brown text-white px-6 py-3 rounded-full hover:bg-logo-pink transition-all">Visit</a>
             </div>
         </nav>
     </header>
@@ -90,103 +86,129 @@
             <img src="https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover opacity-25" alt="Background">
             <div class="absolute inset-0 hero-gradient"></div>
         </div>
-        <div class="container mx-auto px-6 md:px-8 z-10 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="container mx-auto px-6 md:px-8 z-10 grid md:grid-cols-2 gap-8 items-center">
             <div class="fade-in-up text-center md:text-left">
-                <span class="inline-block text-logo-pink uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold mb-4 md:mb-6">Established on Main Street Stouffville</span>
+                <span class="inline-block text-logo-pink uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold mb-4 md:mb-6">Main Street Stouffville</span>
                 <h2 class="text-4xl md:text-8xl font-serif font-bold leading-tight mb-4 md:mb-8 text-logo-brown">Sweet Moments, <br><span class="italic font-light text-logo-pink">Hand-Crafted.</span></h2>
-                <p class="text-lg md:text-xl text-slate-600 mb-6 md:mb-10 max-w-lg leading-relaxed font-bold mx-auto md:mx-0">We aren't just a snack bar—we're a family. Every shake is spun by hand and every smile is genuine.</p>
+                <p class="text-lg md:text-xl text-slate-600 mb-6 md:mb-10 font-bold max-w-lg mx-auto md:mx-0">Every shake is spun by hand and every smile is genuine.</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 md:gap-4">
-                    <a href="#specials" class="btn-main bg-logo-brown text-white hover:bg-logo-pink hover:shadow-xl">See Specials</a>
+                    <a href="#specials" class="btn-main bg-logo-brown text-white hover:bg-logo-pink">See Specials</a>
                     <a href="tel:+19055914832" class="btn-main border-2 border-logo-brown/20 bg-transparent hover:bg-soft-cream">Call 905-591-4832</a>
                 </div>
             </div>
             <div class="hidden md:block fade-in-up" style="animation-delay: 0.2s;">
-                <div class="relative">
-                    <div class="absolute -inset-6 bg-logo-mint/25 rounded-full blur-3xl"></div>
-                    <img src="https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="relative z-10 soft-round shadow-2xl border-[10px] border-white" alt="Shake">
-                </div>
+                <img src="https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="soft-round shadow-2xl border-[10px] border-white" alt="Shake">
             </div>
         </div>
     </section>
 
-    <section id="specials" class="py-12 md:py-24 bg-soft-cream">
+    <section id="specials" class="py-10 md:py-20 bg-soft-cream">
         <div class="container mx-auto px-4 md:px-8 text-center">
-            <div class="mb-8 md:mb-20 text-logo-brown font-bold">
-                <span class="text-logo-pink uppercase tracking-[0.3em] text-[10px] md:text-sm font-bold">🎉 Weekly Celebrations</span>
-                <h3 class="text-3xl md:text-5xl font-serif font-bold mt-2 md:mt-6 mb-2 md:mb-4">Daily Specials</h3>
-                <p class="text-sm md:text-lg text-slate-500 font-light max-w-2xl mx-auto">Our rotation of sweetness at 6362 Main St.</p>
+            <div class="mb-8 md:mb-16 font-bold">
+                <h3 class="text-3xl md:text-5xl font-serif font-bold mb-2">Daily Specials</h3>
+                <p class="text-sm md:text-lg text-slate-500 font-light">6362 Main St rotation of sweetness.</p>
             </div>
-            
-            <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 md:gap-6 max-w-full mx-auto font-bold">
-                <div class="bg-white p-3 md:p-6 soft-round border-2 border-logo-pink/20 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Milkshake">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Tuesdays</p>
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 md:gap-6 font-bold">
+                <div class="bg-white p-3 md:p-6 soft-round border-2 border-logo-pink/20 shadow-sm">
+                    <img src="https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Tuesdays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Shake It Up</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$4</p>
+                    <p class="text-lg md:text-2xl">$4</p>
                 </div>
-                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://lifemadesimplebakes.com/wp-content/uploads/2015/05/Tin-Roof-Ice-Cream-square-1200-500x500.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Waffle">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Wednesdays</p>
+                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm">
+                    <img src="https://lifemadesimplebakes.com/wp-content/uploads/2015/05/Tin-Roof-Ice-Cream-square-1200-500x500.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Wednesdays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Waffle Cones</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$5</p>
+                    <p class="text-lg md:text-2xl">$5</p>
                 </div>
-                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Espresso">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Thursdays</p>
+                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm">
+                    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Thursdays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Espresso</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$4</p>
+                    <p class="text-lg md:text-2xl">$4</p>
                 </div>
-                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://www.thespruceeats.com/thmb/LiM-lpgiHoVAG4DCN6LO7dF0daA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ice-cream-float-4846526-step-06-16e01134e2a04131979f07bb028ce3ee.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Float">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Fridays</p>
+                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm">
+                    <img src="https://www.thespruceeats.com/thmb/LiM-lpgiHoVAG4DCN6LO7dF0daA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ice-cream-float-4846526-step-06-16e01134e2a04131979f07bb028ce3ee.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Fridays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Floats</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$5</p>
+                    <p class="text-lg md:text-2xl">$5</p>
                 </div>
-                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://images.pexels.com/photos/2109099/pexels-photo-2109099.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Lemons">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Saturdays</p>
+                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm">
+                    <img src="https://images.pexels.com/photos/2109099/pexels-photo-2109099.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Saturdays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Lemons</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$4</p>
+                    <p class="text-lg md:text-2xl">$4</p>
                 </div>
-                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm hover:shadow-md transition-all">
-                    <img src="https://www.chewoutloud.com/wp-content/uploads/2024/04/Strawberry-Ice-Cream-in-Bowl.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 md:mb-4 object-cover" alt="Strawberry">
-                    <p class="text-logo-pink font-bold text-[9px] md:text-xs uppercase tracking-widest mb-1">Sundays</p>
+                <div class="bg-white p-3 md:p-6 soft-round border border-logo-mint/40 shadow-sm">
+                    <img src="https://www.chewoutloud.com/wp-content/uploads/2024/04/Strawberry-Ice-Cream-in-Bowl.jpg" class="w-14 h-14 md:w-24 md:h-24 mx-auto rounded-full mb-2 object-cover">
+                    <p class="text-logo-pink text-[9px] md:text-xs uppercase mb-1">Sundays</p>
                     <h4 class="font-serif text-xs md:text-lg mb-1">Strawberry</h4>
-                    <p class="text-logo-brown text-lg md:text-2xl font-bold">$5</p>
+                    <p class="text-lg md:text-2xl">$5</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="py-16 md:py-32 bg-white font-bold">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-            <h3 class="text-[10px] md:text-sm uppercase tracking-[0.4em] text-logo-brown/50 mb-8 md:mb-16 font-bold">From Our Community</h3>
-            <div id="testimonial-container" class="max-w-4xl mx-auto min-h-[200px] md:min-h-[250px] flex items-center justify-center text-logo-brown"></div>
-            <div class="flex justify-center space-x-6 md:space-x-8 mt-8 md:mt-12">
-                <button onclick="changeTestimonial(-1)" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-logo-brown/10 hover:border-logo-pink transition-colors text-lg md:text-xl shadow-sm"><i class="fas fa-chevron-left"></i></button>
-                <button onclick="changeTestimonial(1)" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-logo-brown/10 hover:border-logo-pink transition-colors text-lg md:text-xl shadow-sm"><i class="fas fa-chevron-right"></i></button>
+    <section id="menu" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-8">
+            <div class="text-center mb-12">
+                <span class="text-logo-pink uppercase tracking-widest text-[10px] md:text-sm font-bold">Our Classics</span>
+                <h3 class="text-4xl md:text-6xl font-serif font-bold mt-2">The Collection</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div class="group">
+                    <div class="overflow-hidden soft-round shadow-lg mb-6">
+                        <img src="https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl font-bold mb-2">Signature Milkshakes</h4>
+                    <p class="text-slate-500 font-bold leading-relaxed">Thick, hand-spun, and loaded with gourmet toppings. Choose your vibe from classic vanilla to Oreo blast.</p>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden soft-round shadow-lg mb-6">
+                        <img src="https://lifemadesimplebakes.com/wp-content/uploads/2015/05/Tin-Roof-Ice-Cream-square-1200-500x500.jpg" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl font-bold mb-2">Artisan Scoops</h4>
+                    <p class="text-slate-500 font-bold leading-relaxed">Our premium ice cream served in crispy, fresh waffle cones. A Main Street tradition.</p>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden soft-round shadow-lg mb-6">
+                        <img src="https://www.thespruceeats.com/thmb/LiM-lpgiHoVAG4DCN6LO7dF0daA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ice-cream-float-4846526-step-06-16e01134e2a04131979f07bb028ce3ee.jpg" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl font-bold mb-2">Fizzy Floats</h4>
+                    <p class="text-slate-500 font-bold leading-relaxed">The perfect pairing of chilled soda and creamy ice cream. Refreshing, nostalgic, and sweet.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="bg-logo-brown text-white py-12 md:py-24 font-bold">
-        <div class="container mx-auto px-6 md:px-8 grid md:grid-cols-3 gap-12 md:gap-20">
-            <div class="text-center md:text-left">
-                <img src="https://i.postimg.cc/PpC1M8J2/615790443-17849043009656125-2597734954172127466-n.jpg" class="w-16 h-16 rounded-full mb-6 md:mb-8 grayscale brightness-200 mx-auto md:mx-0" alt="Footer Logo">
-                <p class="text-slate-300 text-sm md:text-lg leading-relaxed font-light">Crafting sweet memories on Main Street. A family-run boutique where everyone is welcome.</p>
+    <section id="testimonials" class="py-12 md:py-24 bg-soft-cream font-bold">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-[10px] md:text-sm uppercase tracking-[0.4em] text-logo-brown/50 mb-8 font-bold">From Our Community</h3>
+            <div id="testimonial-container" class="max-w-4xl mx-auto min-h-[200px] flex items-center justify-center text-logo-brown"></div>
+            <div class="flex justify-center space-x-6 mt-8">
+                <button onclick="changeTestimonial(-1)" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-logo-brown/10 hover:border-logo-pink transition-colors text-lg"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="changeTestimonial(1)" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-logo-brown/10 hover:border-logo-pink transition-colors text-lg"><i class="fas fa-chevron-right"></i></button>
             </div>
-            <div class="text-center md:text-left">
-                <h4 class="font-serif text-xl md:text-2xl mb-4 md:mb-8 font-bold text-white">Find the Magic</h4>
-                <p class="text-slate-300 text-sm md:text-lg mb-2 font-bold">📍 Snack Shack on Main</p>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-logo-brown text-white py-12 md:py-20 font-bold text-center md:text-left">
+        <div class="container mx-auto px-6 md:px-8 grid md:grid-cols-3 gap-10">
+            <div>
+                <img src="https://i.postimg.cc/PpC1M8J2/615790443-17849043009656125-2597734954172127466-n.jpg" class="w-16 h-16 rounded-full mb-6 mx-auto md:mx-0 grayscale brightness-200">
+                <p class="text-slate-300 text-sm md:text-lg leading-relaxed font-light">Crafting sweet memories on Main Street.</p>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl md:text-2xl mb-4 text-white">Find the Magic</h4>
                 <p class="text-slate-300 text-sm md:text-lg mb-4">6362 Main St, Whitchurch-Stouffville, ON L4A 1G9</p>
-                <a href="tel:+19055914832" class="text-logo-mint text-lg md:text-xl font-bold hover:text-logo-pink transition-colors underline decoration-logo-mint">+1-905-591-4832</a>
+                <a href="tel:+19055914832" class="text-logo-mint text-lg md:text-xl underline">+1-905-591-4832</a>
             </div>
-            <div class="text-center md:text-left">
-                <h4 class="font-serif text-xl md:text-2xl mb-4 md:mb-8 font-bold text-white">Hours of Sweetness</h4>
+            <div>
+                <h4 class="font-serif text-xl md:text-2xl mb-4 text-white">Hours</h4>
                 <div class="text-slate-300 text-sm md:text-lg space-y-1">
                     <p><span class="text-logo-pink">Mon:</span> Closed</p>
-                    <p><span class="text-logo-mint">Tue - Fri:</span> 4:00 PM – 9:00 PM</p>
-                    <p><span class="text-logo-mint">Sat - Sun:</span> 11:00 AM – 9:00 PM</p>
+                    <p><span class="text-logo-mint">Tue-Fri:</span> 4:00 PM – 9:00 PM</p>
+                    <p><span class="text-logo-mint">Sat-Sun:</span> 11:00 AM – 9:00 PM</p>
                 </div>
             </div>
         </div>
@@ -194,8 +216,8 @@
 
     <script>
         const reviews = [
-            { name: "Avery Setiawan", text: "This store was absolutely amazing! The employees were sweet, professional, and clearly well trained. The drinks were incredible full of flavour and perfectly made. Hands down one of the best store I’ve been to!!! I really recommend." },
-            { name: "Mikaela Cappuccitti", text: "I love this new place!! Staff is super friendly and the drinks were delicious. Overall it was an amazing experience and a must try on Main Street!" },
+            { name: "Avery Setiawan", text: "This store was absolutely amazing! The employees were sweet, professional, and clearly well trained. The drinks were incredible full of flavour and perfectly made." },
+            { name: "Mikaela Cappuccitti", text: "I love this new place!! Staff is super friendly and the drinks were delicious. Overall an amazing experience!" },
             { name: "Luca Bonomo", text: "This new place is amazing!! The staff are so friendly and the drinks are delicious! I would definitely recommend." },
             { name: "Emma", text: "This place has so many delicious desserts and drinks! The staff are very sweet. It’s super welcoming!" }
         ];
@@ -205,9 +227,9 @@
             const r = reviews[currentIdx];
             document.getElementById('testimonial-container').innerHTML = `
                 <div class="fade-in-up px-4">
-                    <div class="text-logo-mint text-3xl md:text-5xl mb-6 md:mb-10 font-bold"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-lg md:text-3xl font-serif italic mb-6 md:mb-10 leading-snug text-logo-brown">"${r.text}"</p>
-                    <p class="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-logo-pink">— ${r.name}</p>
+                    <div class="text-logo-mint text-4xl md:text-5xl mb-6 font-bold"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-xl md:text-3xl font-serif italic mb-6 leading-snug text-logo-brown">"${r.text}"</p>
+                    <p class="text-sm uppercase tracking-[0.3em] font-bold text-logo-pink">— ${r.name}</p>
                 </div>
             `;
         }
